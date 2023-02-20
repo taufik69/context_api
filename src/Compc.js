@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
-import { Fname, last } from "./App";
-const Compc = () => {
-  const name = useContext(Fname);
-  const lastname = useContext(last);
+const Compc = ({ handleClick }) => {
+  console.log("this is component c");
   return (
     <>
-      <h1>{name}</h1>
-      <h1>{lastname}</h1>
+      <h1>this is componet c</h1>
+      <button type="button" onClick={handleClick}>
+        click me
+      </button>
     </>
   );
 };

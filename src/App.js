@@ -1,18 +1,11 @@
-import { createContext } from "react";
-import Compc from "./Compc";
-let Fname = createContext();
-let last = createContext();
+import CompA from "./CompA";
+
 function App() {
   return (
     <>
-      <Fname.Provider value={"taufik "}>
-        <last.Provider value={"islam"}>
-          <Compc />
-        </last.Provider>
-      </Fname.Provider>
+      <CompA />
     </>
   );
 }
 
 export default App;
-export { Fname, last };

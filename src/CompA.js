@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import Compc from "./Compc";
+import React from "react";
+import UseWidthMachine from "./CustomHooks/UseWidth";
+
 const CompA = () => {
-  console.log("this is component B");
-  const [show, setshow] = useState(true);
+  const result = UseWidthMachine(700);
+  console.log("sending result is :", result);
   return (
-    <div>
-      {show ? <h1>This is component a </h1> : null}
-      <Compc handleClick={() => setshow(!show)} />
-    </div>
+    <>
+      <h1>{result ? "that is taufik " : "You will be a billoniare"}</h1>
+    </>
   );
 };
 
